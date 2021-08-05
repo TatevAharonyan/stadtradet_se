@@ -1,0 +1,43 @@
+.home_saction {
+    width: 100%;
+    height: auto;
+}
+
+#h1_shadow {
+    text-shadow:
+     3px 3px 5px white,
+     -5px 5px 5px white;
+}
+
+.saction_home_h1 {
+    margin: 3%;
+    text-align: center;
+    color: #092474;
+    /* font-size: 2rem; */
+    font-size: 28px;
+}
+
+.saction_home_h2 {
+    padding: 3%;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(41, 40, 40)
+}
+
+@media (max-width: 620px) {
+    .saction_home_h1 {
+        font-size: 23px;
+    }
+    .saction_home_h2 {
+        font-style: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .saction_home_h1 {
+        font-size: 20px;
+    }
+    .saction_home_h2 {
+      font-size: 16px;
+    }
+}
