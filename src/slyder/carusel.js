@@ -39,7 +39,7 @@ export default function Carusel() {
 
                 navigation={true}
                 autoplay={{
-                    "delay": 1000,
+                    "delay": 3000,
                     "disableOnInteraction": false
                 }}
                 className="mySwiper">

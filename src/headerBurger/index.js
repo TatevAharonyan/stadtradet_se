@@ -1,3 +1,4 @@
+import Navigations from "../header/navigation";
 import Popup from "../popup";
 import "./../style/header.css";
 
@@ -21,12 +22,22 @@ const HeaderBurger = () => {
         }
     }
 
+    const stop = e => {
+        // e.stopPropagation();
+    }
+
     return (
         <div className="burger_menu " onClick={popupOpen} >
-            <img
-                src="logo_ico.png"
-                alt="logo"
-                className="logo_burge_menu"
+             <Navigations 
+                saction={<img
+                    src="logo_ico.png"
+                    alt="logo"
+                    className="logo_burge_menu"
+                    onClick = {stop}
+                /> }
+                href="/"
+                keyAt="id0"
+                activeClass="nav_a-active"
             />
             <div className="burger" >
                 <span></span>

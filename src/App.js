@@ -18,21 +18,25 @@ import {
 
 function App() {
 
-  const [onResize, setOnResize] = useState(null);
-
+  const [onResizeBurger, setOnResizeBurger] = useState(null);
+  const [onResizeMax, setOnResizeMax] = useState(null);
   window.onload = function () {
     if (window.innerWidth <= 770) {
-      setOnResize(true);
+      setOnResizeBurger(true);
+      setOnResizeMax(false);
     } else {
-      setOnResize(false);
+      setOnResizeMax(true);
+      setOnResizeBurger(false);
     }
   }
 
   window.onresize = function () {
     if (window.innerWidth <= 770) {
-      setOnResize(true);
+      setOnResizeBurger(true);
+      setOnResizeMax(false);
     } else {
-      setOnResize(false);
+      setOnResizeMax(true);
+      setOnResizeBurger(false);
     }
   }
 
@@ -41,7 +45,8 @@ function App() {
     <Router >
       <div className="App">
         <div className="wrapper">
-          {!onResize ? <Header /> : <HeaderBurger />}
+          {onResizeMax && <Header /> }
+          {onResizeBurger && <HeaderBurger />}
           <Switch>
             <Route path="/services">
               <Services />

@@ -1,12 +1,16 @@
 
+import Navigations from "./navigation";
+
 
 const LogoHeader = () => {
     return (
         <div id="logo">
-            <div className="logoPic_info_wrapper">
-                <div className="logoPic"></div>
-            </div>
-
+            <Navigations 
+                saction={ <div className="logoPic"></div> }
+                href="/"
+                keyAt="id0"
+                activeClass="nav_a-active"
+            />
         </div>
     )
 }

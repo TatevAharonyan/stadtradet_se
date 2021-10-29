@@ -7,12 +7,13 @@
 
 .img_galer {
     flex: 20%;
-    height:15rem;
+    height: 20vw;
 }
 
 .img_galer  img {
   transition: .5s;
-  padding: 15px ;
+  /* padding: 15px ; */
+  padding: .6vw;
   width: 100%;
   height: 100%;
 }
@@ -21,29 +22,10 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 922px) {
-  
-  .img_galer {
-    height: 12rem;
-  }
-}
-
-@media (max-width: 780px) {
-  
-  .img_galer {
-    height: 10rem;
-  }
-}
 
 @media (max-width: 600px) {
-  
-  .img_galer {
-    height: 5rem;
-  }
-  
+      
   .img_galer  img {
-    transition: .5s;
-    padding: 7px ;
+    padding: .8vw ;
   }
 }
-    
